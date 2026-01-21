@@ -428,4 +428,10 @@ input:focus, textarea:focus{
   align-items:start;
 }
 .footer__brand{ font-weight: 900; font-size:
+@media (max-width: 768px){
+  .before-after__images img{
+    height: 220px;
+  }
+}
+
 
