@@ -1,3 +1,13 @@
+/* Mobiel basis fixes */
+html, body { overflow-x: hidden; }
+
+* { min-width: 0; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 :root{
   --bg: #07122A;
   --bg2:#0B1B3A;
@@ -436,6 +446,7 @@ input:focus, textarea:focus{
 html, body {
   overflow-x: hidden;
 }
+
 
 
 
