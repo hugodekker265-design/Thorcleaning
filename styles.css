@@ -47,7 +47,8 @@ img{ max-width:100%; display:block; }
 
 /* Header */
 .header{
-  position: sticky;
+  position: static;
+}
   top:0;
   z-index: 20;
   backdrop-filter: blur(12px);
@@ -427,3 +428,4 @@ input:focus, textarea:focus{
   align-items:start;
 }
 .footer__brand{ font-weight: 900; font-size:
+
