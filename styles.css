@@ -446,6 +446,87 @@ input:focus, textarea:focus{
 html, body {
   overflow-x: hidden;
 }
+.before-after{
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: var(--radius2);
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.03);
+  box-shadow: var(--shadow);
+}
+
+.before-after__images{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.before-after__images img{
+  width: 100%;
+  max-width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+/* Extra mobile polish */
+@media (max-width: 768px){
+  .container{
+    width: calc(100% - 28px);
+  }
+
+  .hero{
+    padding: 28px 0 18px;
+  }
+
+  .hero__grid{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .hero__actions{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn{
+    width: 100%;
+  }
+
+  .hero__trust{
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2{
+    grid-template-columns: 1fr;
+  }
+
+  .cards{
+    grid-template-columns: 1fr;
+  }
+
+  .gallery{
+    grid-template-columns: 1fr;
+  }
+
+  .before-after__images{
+    grid-template-columns: 1fr; /* zet before/after onder elkaar */
+  }
+
+  .before-after__images img{
+    height: 220px;
+  }
+
+  .nav, .header__cta{
+    display: none;
+  }
+  .menu-btn{
+    display: block;
+  }
+}
+
 
 
 
