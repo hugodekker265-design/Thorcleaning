@@ -433,5 +433,9 @@ input:focus, textarea:focus{
     height: 220px;
   }
 }
+html, body {
+  overflow-x: hidden;
+}
+
 
 
